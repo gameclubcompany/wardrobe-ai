@@ -1,6 +1,5 @@
-import { Hono } from "hono";
-const app = new Hono<{ Bindings: Env }>();
-
-app.get("/api/", (c) => c.json({ name: "Cloudflare" }));
-
-export default app;
+export default {
+  async fetch() {
+    return new Response("WARDROBE AI TEST 123");
+  },
+};
